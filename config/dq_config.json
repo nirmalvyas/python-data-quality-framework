@@ -1,0 +1,60 @@
+{
+  "raw_folder": "RAW",
+  "err_folder": "ERR",
+  "files": [
+    {
+      "file_name": "customers.csv",
+      "checks": [
+        {
+          "type": "not_null",
+          "columns": ["customer_id", "name", "email", "signup_date"]
+        },
+        {
+          "type": "unique",
+          "columns": ["customer_id", "email"]
+        },
+        {
+          "type": "datatype",
+          "columns": {
+            "customer_id": "int64",
+            "name": "object",
+            "email": "object",
+            "age": "int64",
+            "signup_date": "datetime64[ns]"
+          }
+        }
+      ]
+    },
+    {
+      "file_name": "renewable_energy_kaggle/renewable_energy_share_2000_2025.csv",
+      "source": "https://www.kaggle.com/datasets/elvisbui/renewable-energy-share-by-country-2000-2025",
+      "checks": [
+        {
+          "type": "not_null",
+          "columns": ["country", "year"]
+        },
+        {
+          "type": "unique_combination",
+          "columns": ["country", "year"]
+        },
+        {
+          "type": "datatype",
+          "columns": {
+            "country": "object",
+            "year": "int64",
+            "population": "float64",
+            "electricity_generation": "float64",
+            "electricity_demand": "float64",
+            "renewables_share_energy": "float64",
+            "renewables_share_elec": "float64",
+            "fossil_share_energy": "float64",
+            "fossil_share_elec": "float64",
+            "solar_electricity": "float64",
+            "wind_electricity": "float64",
+            "hydro_electricity": "float64"
+          }
+        }
+      ]
+    }
+  ]
+}

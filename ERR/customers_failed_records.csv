@@ -1,0 +1,7 @@
+dq_errors,customer_id,name,email,age,signup_date
+unique(customer_id); unique(email),2,Rohan,rohan@example.com,27,2024-02-12
+not_null(name),3,,meera@example.com,29,2024-03-20
+datatype(age),4,Dev,dev@example.com,unknown,2024-04-17
+unique(customer_id),2,Kavya,kavya@example.com,41,2024-05-01
+unique(email),6,Isha,rohan@example.com,31,2024-06-08
+not_null(email); datatype(signup_date),7,Neil,,22,not-a-date

@@ -1,0 +1,8 @@
+customer_id,name,email,age,signup_date
+1,Asha,asha@example.com,34,2024-01-05
+2,Rohan,rohan@example.com,27,2024-02-12
+3,,meera@example.com,29,2024-03-20
+4,Dev,dev@example.com,unknown,2024-04-17
+2,Kavya,kavya@example.com,41,2024-05-01
+6,Isha,rohan@example.com,31,2024-06-08
+7,Neil,,22,not-a-date
