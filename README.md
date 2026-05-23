@@ -29,8 +29,17 @@ The framework is object-oriented and intentionally small:
 
 ## Setup
 
+From the repository root, create and activate a virtual environment, then install the dependencies from `requirements.txt`.
+
 ```powershell
 py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+```
+
+If PowerShell script activation is disabled on your machine, use the virtual environment's Python directly:
+
+```powershell
 .\.venv\Scripts\python -m pip install -r requirements.txt
 ```
 
