@@ -49,6 +49,14 @@ If PowerShell script activation is disabled on your machine, use the virtual env
 .\.venv\Scripts\python main.py --config config/dq_config.json
 ```
 
+## Future Enhancements
+
+- Streaming validations for near real-time data quality checks.
+- Snowflake integration for warehouse-level validation.
+- SLA monitoring for freshness, completeness, and failure thresholds.
+- API-based validation execution for orchestration tools and CI/CD pipelines.
+- Observability dashboards for trends, failed-record counts, and data quality health.
+
 ## Sample Run Output
 
 ```text
